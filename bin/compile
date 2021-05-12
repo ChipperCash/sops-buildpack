@@ -82,7 +82,7 @@ function install_sops {
     curl --silent -L ${PACKAGE_LOCATION}/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux --output sops
 
     chmod +x sops
-    mv sops bin/
+    mv sops $file
   fi
 
   SOPS_BIN="${build_location}/.sops-buildpack/"
