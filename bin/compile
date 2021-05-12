@@ -99,7 +99,7 @@ function prepare_environment {
   local profile_location="${build_location}/.profile.d"
 
   mkdir -p "${profile_location}"
-  echo 'export PATH="$PATH:$bin"' >> $profile_location/sops.sh
+  echo 'export PATH="$PATH:$HOME/.sops-buildpack/"' >> $profile_location/sops.sh
 }
 
 # Handles orchestrating of the build steps for the script
